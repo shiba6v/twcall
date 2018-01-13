@@ -1,5 +1,7 @@
 $(function(){
-
+    if(window.location.href.slice(0,5)!="https"){
+      window.location.href = "https" + window.location.href.slice(4)
+    }
     let localStream = null;
     let peer = null;
     let existingCall = null;
