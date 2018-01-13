@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>TwCall 〜フォロワーとビデオチャットでつながる〜</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div class="videosContainer">
+    <video id="myStream" autoplay muted="true"></video>
+</div>
+
+<div class="myControllerContainer">
+    <!--<p>Your id: <span id="my-id">...</span></p>-->
+    <form id="make-call">
+        <!--<input type="text" placeholder="Call peer id..." id="peer-id">-->
+        <button type="submit">Callをする！</button>
+    </form>
+    <div id="end-call">
+        <!--<p>Currently in call with <span id="connected-peer-id">...</span></p>-->
+        <button>Callを終わる！</button>
+    </div>
+    <div>
+      <button id="tweet" type="submit">Twitterでお話し相手を募集</button>
+      <p id="call-link"></p>
+    </div>
+    <div>
+      PCのChromeまたはFirefox，Andoird標準ブラウザで動作します．他ブラウザでの動作は確認しておりません．
+    </div>
+</div>
+
+
+</body>
+</html>
